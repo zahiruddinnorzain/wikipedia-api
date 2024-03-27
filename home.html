@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wikipedia-api</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="wikipedia-api.js"></script>
+    <!-- <script src="https://zahiruddinnorzain.github.io/wikipedia-api.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/zahiruddinnorzain/wikipedia-api@v1.0.0/wikipedia-api.js"></script> -->
+
+</head>
+<body>
+    <p>Wikipedia Search</p>
+    <input type="text" id="q" value="">
+    <button onclick="hantar()">Search</button>
+    <hr>
+    <p id="wiki"></p>
+
+<script>
+    function hantar(){
+        var q = $('#q').val()
+        var result = wikipedia_api(q,'ms','wiki');
+    }
+</script>
+</body>
+</html>
